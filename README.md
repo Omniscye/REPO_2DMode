@@ -1,7 +1,7 @@
 # REPO_2DMode
 
 A BepInEx mod that adds a toggleable 2D mode, flattening the world into a strict 2D look.  
-Pressing **F8** in-game to enable or disable it.
+Press **F8** in-game to enable or disable it.
 
 ## Technical Details
 
@@ -35,6 +35,14 @@ REPO_2DMode works by attaching Harmony patches and runtime enforcers to squash o
 - **Toggle OFF**  
   - All `_FlatMarker`, `AvatarRigFlattener`, `AvatarPerRendererFlattener`, and flashlight enforcers are detached.  
   - Every object’s original scale is restored safely.
+
+## Installation
+1. Install [BepInEx 5.4.21](https://github.com/BepInEx/BepInEx/releases)
+2. Place the compiled DLL into your `BepInEx/plugins` folder
+3. Launch the game and press **F8** to toggle 2D mode
+
+## Controls
+- **F8** → Toggle 2D mode on/off
 
 ## Credits
 Created by Omniscye  
